@@ -1,0 +1,125 @@
+/*---  Invoice  ---*/
+
+.main-invoice-list {
+  position: relative;
+  border-top: 1px solid$border;
+
+  .media {
+    align-items: center;
+    border: 1px solid transparent;
+    border-right-width: 0;
+    padding: 10px 20px;
+    position: relative;
+
+    &:hover, &:focus {
+      cursor: pointer;
+      background-color: #f1f2f9;
+    }
+
+    + .media {
+      margin-top: -1px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 55px;
+        right: 0;
+        border-top: 1px dotted$border;
+      }
+    }
+  }
+
+  .media-icon {
+    width: 24px;
+    text-align: center;
+    font-size: 32px;
+    color: $muted;
+  }
+
+  .media-body {
+    margin-left: 15px;
+
+    h6 {
+      font-weight: 500;
+      color: $color;
+      margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span:last-child {
+        color: $primary;
+      }
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 11px;
+      font-family: Arial, sans-serif;
+      color: #3b4863;
+
+      span {
+        color: $muted;
+      }
+    }
+  }
+
+  .selected {
+    background-color: #f1f2f9;
+    border-top-color:$border;
+    border-bottom-color:$border;
+    border-left-color: $primary;
+
+    &:first-child {
+      border-top-color: transparent;
+    }
+  }
+}
+
+.invoice-title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color:$border;
+  font-weight: 700;
+}
+
+.invoice-info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  margin-bottom: 0;
+  font-size: 13px;
+
+  + .invoice-info-row {
+    border-top: 1px dotted$border;
+  }
+
+  span:first-child {
+    color: #596882;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-invoice-list {
+    height: calc(100% - 65px);
+
+    .media {
+      padding: 10px 15px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}

@@ -1,0 +1,278 @@
+/*---  Background  ---*/
+
+.bg-transparent {
+  background-color: transparent;
+  background-color: transparent !important;
+}
+
+.bg-gray-100 {
+  background-color: #f1f2f9;
+}
+
+.bg-gray-200 {
+  background-color: #e9eaf3;
+}
+
+.bg-gray-300 {
+  background-color:$border;
+}
+
+.bg-gray-400 {
+  background-color: #b4bdce;
+}
+
+.bg-gray-500, .bg-gray-600 {
+  background-color: $muted;
+}
+
+.bg-gray-700 {
+  background-color: #596882;
+}
+
+.bg-gray-800 {
+  background-color: #3b4863;
+}
+
+.bg-gray-900 {
+  background-color: $color;
+}
+
+.bg-white-1 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-white-2 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-white-3 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-white-4 {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.bg-white-5 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-white-6 {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.bg-white-7 {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-white-8 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-white-9 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-black-1 {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-black-2 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bg-black-3 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg-black-4 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-black-5 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-black-6 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-black-7 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-black-8 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-black-9 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.bg-primary-dark {
+  background-color: $primary;
+}
+
+.bg-indigo {
+  background-color: #4b0082;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-pink {
+  background-color: $pink;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-teal {
+  background-color: $teal;
+}
+
+.bg-purple-dark {
+  background-color: #59339d;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+a.bg-primary {
+  &:hover, &:focus {
+    background-color: #7c59e6 !important;
+  }
+}
+
+button.bg-primary {
+  &:hover, &:focus {
+    background-color: #7c59e6 !important;
+  }
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+a.bg-secondary {
+  &:hover, &:focus {
+    background-color: $secondary !important;
+  }
+}
+
+button.bg-secondary {
+  &:hover, &:focus {
+    background-color: $secondary !important;
+  }
+}
+
+.bg-success {
+  background-color: $success !important;
+}
+
+a.bg-success {
+  &:hover, &:focus {
+    background-color: #37ce4f !important;
+  }
+}
+
+button.bg-success {
+  &:hover, &:focus {
+    background-color: #37ce4f !important;
+  }
+}
+
+.bg-info {
+  background-color: $info !important;
+}
+
+a.bg-info {
+  &:hover, &:focus {
+    background-color: #06aff1 !important;
+  }
+}
+
+button.bg-info {
+  &:hover, &:focus {
+    background-color: #06aff1 !important;
+  }
+}
+
+.bg-warning {
+  background-color: $warning !important;
+}
+
+a.bg-warning {
+  &:hover, &:focus {
+    background-color: #d39e00 !important;
+  }
+}
+
+button.bg-warning {
+  &:hover, &:focus {
+    background-color: #d39e00 !important;
+  }
+}
+
+.bg-danger {
+  background-color: $danger !important;
+}
+
+a.bg-danger {
+  &:hover, &:focus {
+    background-color: $danger !important;
+  }
+}
+
+button.bg-danger {
+  &:hover, &:focus {
+    background-color: $danger !important;
+  }
+}
+
+.bg-light {
+  background-color:$border !important;
+}
+
+a.bg-light {
+  &:hover, &:focus {
+    background-color: #dbe0ea !important;
+  }
+}
+
+button.bg-light {
+  &:hover, &:focus {
+    background-color: #dbe0ea !important;
+  }
+}
+
+.bg-dark {
+  background-color: #3b4863 !important;
+}
+
+a.bg-dark {
+  &:hover, &:focus {
+    background-color: #131212 !important;
+  }
+}
+
+button.bg-dark {
+  &:hover, &:focus {
+    background-color: #131212 !important;
+  }
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-gray + .select2-container--default .select2-selection--single {
+  background-color: #455473;
+
+  .select2-selection__rendered {
+    color:$border;
+  }
+}

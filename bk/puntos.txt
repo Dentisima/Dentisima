@@ -1,0 +1,31 @@
+
+
+ESTO ES LO QUE ENCONTRAMOS DE LO QUE REVISAMOS AYER:
+Solo nos concentramos en el proceso de "REGISTRO":
+
+[1] Fecha de nacimiento aun no funciona
+~con los números grandes a prueba de errores.
+~que calcule la edad.
+[2] Caja del nombre del padre/tutor:
+que se activa cuando la edad es menor a 18.
+[3] Whatsapp:
+nos dejo escribir más de 8 números y también letras. [OK]
+
+[4] Falto el campo "Tiene saldo pendiente".
+[5] Falto el campo "Nota personal sobre el paciente".
+[6] Falto el campo "Nombre de quien te invita.
+[7] Y en general se nota que le falta toda la parte de mejorar el diseño.
+[8] Para generar la clave de cada usuario Julio le gustaría
+De izquierda a derecha:
+1 digito para la sucursal.
+2 digitos para el año.
+2 digitos para el mes.
+4 ultimos para el consecutivo.
+125061001
+¿se puede así?
+[9] Aunque faltaban campos tampoco pudimos registrar un ejemplo y
+revisar las pantallas de confirmación y registro y luego buscarlo.
+
+[10] y por último vimos que para buscar pacientes aun no funciona
+pensamos porque colocaste esa pantalla por mientras.
+

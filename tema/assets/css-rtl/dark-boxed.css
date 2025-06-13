@@ -1,0 +1,68 @@
+/*Color variables*/
+/*shadow variables*/
+/*border variables*/
+/* dark theme */
+@media (min-width: 1025px) {
+  .dark-theme.boxed .page {
+    max-width: 1170px;
+    margin: 0 auto;
+    background: #101329;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 0px 0px, rgba(0, 0, 0, 0.3) 0px 5px 25px 0px; }
+  .dark-theme.boxed body {
+    background: #3d3d69 !important; }
+  .dark-theme.boxed .horizontalMenu > .horizontalMenu-list > li > a .fa {
+    margin-right: 0px !important; }
+  .dark-theme.boxed .navbar {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .dark-theme.boxed .vh {
+    height: 100vh; }
+  .dark-theme.boxed .navbar.land-navbar {
+    max-width: 1170px;
+    margin: 0 auto; }
+  .dark-theme.boxed .app-sidebar {
+    right: auto !important; }
+  .dark-theme.boxed .app .main-header.side-header {
+    left: auto !important;
+    right: auto !important;
+    width: 1170px !important; }
+  .dark-theme.boxed .app.sidebar-mini.sidenav-toggled4 .first-sidemenu {
+    left: auto !important; }
+  .dark-theme.boxed .second-sidemenu {
+    right: auto !important;
+    margin-right: 100px;
+    left: auto !important; }
+  .dark-theme.boxed .main-body {
+    display: inherit; }
+  .dark-theme.boxed .main-header.side-header {
+    left: auto !important;
+    right: auto !important;
+    position: sticky !important; }
+  .dark-theme.boxed .main-sidebar-hide .side-menu {
+    left: auto !important; }
+  .dark-theme.boxed .main-sidebar.side-menu {
+    right: auto !important; }
+  .dark-theme.boxed .modal-open .main-sidebar {
+    z-index: 999; }
+  .dark-theme.boxed .dark-theme .main-sidebar-sticky {
+    box-shadow: none !important; }
+  .dark-theme.boxed .dark-theme .side-header, .dark-theme.boxed .dark-theme .main-navbar {
+    box-shadow: 0 0px 2px 0 #101329 !important; } }
+
+@media (min-width: 992px) {
+  .sticky-pin {
+    top: 0;
+    width: 100%; } }
+
+@media (min-width: 1025px) {
+  body.boxed.dark-theme {
+    background: #1c1c38 !important; } }
+
+/*# sourceMappingURL=dark-boxed.css.map */
