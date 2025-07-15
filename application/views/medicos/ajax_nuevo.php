@@ -90,7 +90,7 @@
         
            $.ajax({
               type: "POST",
-              url: "<?php echo BASE_URL; ?>cliente/Ajax_referido",
+              url: "<?php echo BASE_URL(); ?>cliente/Ajax_referido",
               data: {CODIGO_REFERIDO: Codigo},
               cache: false,
               success: function (result) {
@@ -110,7 +110,7 @@
            
            $.ajax({
               type: "POST",
-              url: "<?php echo BASE_URL; ?>cliente/Ajax_guardar",
+              url: "<?php echo BASE_URL(); ?>cliente/Ajax_guardar",
               data: {
                   ID:<?php if( isset($Info->ID) ){ echo $Info->ID;}else{ echo "0";} ?>,
                   NOMBRE: $("#_NOMBRE").val(), APELLIDOS: $("#_APELLIDOS").val(), TELEFONO: $("#_TELEFONO").val(),

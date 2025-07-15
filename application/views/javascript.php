@@ -5,7 +5,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>cliente/Ajax_nuevo",
+            url: "<?php echo BASE_URL(); ?>cliente/Ajax_nuevo",
             data: {Id: Id},
             cache: false,
             success: function (result) {
@@ -20,7 +20,7 @@
         $("#_tbodymodallista").html(""); 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>cliente/Ajax_modal_busqueda",
+            url: "<?php echo BASE_URL(); ?>cliente/Ajax_modal_busqueda",
             data: {Busqueda: $("#_buscadorpaciente").val()},
             cache: false,
             success: function (result) { 

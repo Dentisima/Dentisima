@@ -44,7 +44,7 @@
         
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>notas/Ajax_notas_info",
+            url: "<?php echo BASE_URL(); ?>notas/Ajax_notas_info",
             data: {Id: Id },
             cache: false,
             success: function (result) {
@@ -58,7 +58,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>notas/Ajax_notas",
+            url: "<?php echo BASE_URL(); ?>notas/Ajax_notas",
             data: {Busqueda: $("#_busqueda").val() },
             cache: false,
             success: function (result) {

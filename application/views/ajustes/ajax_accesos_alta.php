@@ -116,7 +116,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>ajustes/AjaxAccesos_Guarda",
+            url: "<?php echo BASE_URL(); ?>ajustes/AjaxAccesos_Guarda",
             data: {
                 Id: <?php if (isset($Info->ID)) { echo $Info->ID; } else { echo "0"; } ?>,
                 Nombre: Nombre, Correo: Correo, Pwd: $("#_accpwd").val(), Estatus: $("#_accestatus").val(),

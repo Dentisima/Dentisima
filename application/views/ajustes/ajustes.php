@@ -95,7 +95,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>ajustes/AjaxCatalogo",
+            url: "<?php echo BASE_URL(); ?>ajustes/AjaxCatalogo",
             data: {Categoria: Categoria},
             cache: false,
             success: function (result) {
@@ -110,7 +110,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>ajustes/AjaxAccesos",
+            url: "<?php echo BASE_URL(); ?>ajustes/AjaxAccesos",
             data: {},
             cache: false,
             success: function (result) {

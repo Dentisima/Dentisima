@@ -21,7 +21,7 @@ function DarDebaja(Id){
         
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>notas/Ajax_notasbaja",
+            url: "<?php echo BASE_URL(); ?>notas/Ajax_notasbaja",
             data: {Id: Id },
             cache: false,
             success: function (result) { 
@@ -54,7 +54,7 @@ function DarDebaja(Id){
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>notas/Ajax_notasinternas",
+            url: "<?php echo BASE_URL(); ?>notas/Ajax_notasinternas",
             data: {Id: <?php if (isset($Info->ID)) { echo $Info->ID; } else { echo "0"; } ?>, 
                    Notas: $("#notas").val(), Folio: '<?php echo $Folio;?>'
                   },

@@ -78,7 +78,7 @@
         
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>calendario/Ajax_nuevacita",
+            url: "<?php echo BASE_URL(); ?>calendario/Ajax_nuevacita",
             data: {Fecha:Fecha },
             cache: false,
             success: function (result) {

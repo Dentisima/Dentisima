@@ -9,7 +9,7 @@
 
             <section class="panel">
                 <div class="panel-body">
-                    <form class="form-horizontal" target="_blank" method="post" action="<?php echo BASE_URL; ?>reportes/ReportesExcel">
+                    <form class="form-horizontal" target="_blank" method="post" action="<?php echo BASE_URL(); ?>reportes/ReportesExcel">
                         <input type="hidden" name="Id" value="<?php echo $Info->ID; ?>">
                         <input type="hidden" name="Formato" value="html">
                         <?php if ($Info->FILTROFECHA == 1) { ?>
@@ -188,7 +188,7 @@
 
                                     $.ajax({
                                         type: "POST",
-                                        url: "<?php echo BASE_URL; ?>reportes/AjaxActualizaCron",
+                                        url: "<?php echo BASE_URL(); ?>reportes/AjaxActualizaCron",
                                         data: {
                                             IdReporte: <?php echo $Info->ID;?>,
                                             Id: <?php if (isset($Cron->ID)) { echo $Cron->ID; } else {echo "0";} ?>,
@@ -225,7 +225,7 @@
 
         </div>
     </section>
-    <script src="<?php echo BASE_URL; ?>tema/js/select2/select2.min.js"></script>
+    <script src="<?php echo BASE_URL(); ?>tema/js/select2/select2.min.js"></script>
     <script>
                             function TipoReporte(form, Formato) {
                                 form.Formato.value = Formato;
@@ -235,7 +235,7 @@
 
                                 $.ajax({
                                     type: "POST",
-                                    url: "<?php echo BASE_URL; ?>reportes/Ajax_Tabla",
+                                    url: "<?php echo BASE_URL(); ?>reportes/Ajax_Tabla",
                                     data: {Id: Id, Nombre: Nombre, Condicion: Condicion},
                                     cache: false,
                                     success: function (result) {

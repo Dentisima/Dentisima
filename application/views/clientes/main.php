@@ -93,7 +93,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>cliente/Ajax_busqueda",
+            url: "<?php echo BASE_URL(); ?>cliente/Ajax_busqueda",
             data: {Busqueda: $("#_busqueda").val()},
             cache: false,
             success: function (result) {

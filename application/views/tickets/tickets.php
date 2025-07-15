@@ -131,7 +131,7 @@
   
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>tickets/Ajax_nuevo",
+            url: "<?php echo BASE_URL(); ?>tickets/Ajax_nuevo",
             data: {Asunto: $("#_ticketasunto").val(), Reporta: $("#_ticketreporta").val(),
                    Telefono: $("#_tickettelefono").val(), Correo: $("#_ticketcorreo").val(),
                   Departamento: $("#_ticketdepartamento").val(),
@@ -161,7 +161,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>tickets/Ajax_tickets_info",
+            url: "<?php echo BASE_URL(); ?>tickets/Ajax_tickets_info",
             data: {Id: Id},
             cache: false,
             success: function (result) {
@@ -182,7 +182,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>tickets/Ajax_tickets",
+            url: "<?php echo BASE_URL(); ?>tickets/Ajax_tickets",
             data: {Accion: Accion, Busqueda: $("#_busqueda").val(), Depto: Depto, Estatus: Estatus },
             cache: false,
             success: function (result) {

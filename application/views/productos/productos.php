@@ -110,7 +110,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "<?php echo BASE_URL; ?>productos/Ajax_IdsIntegraciones",
+                url: "<?php echo BASE_URL(); ?>productos/Ajax_IdsIntegraciones",
                 data: {Ids: CadIds},
                 cache: false,
                 success: function (result) {
@@ -127,7 +127,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>productos/Ajax_productos",
+            url: "<?php echo BASE_URL(); ?>productos/Ajax_productos",
             data: {Tipo: $("#TIPO").val(),
                 Org: $("#ORG").val(),
                 Sku: $("#sku").val(),

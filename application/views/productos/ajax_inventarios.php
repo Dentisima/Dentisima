@@ -84,7 +84,7 @@
         $("#_suc_sicar").html("Cargando...");
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>productos/Ajax_sucursal",
+            url: "<?php echo BASE_URL(); ?>productos/Ajax_sucursal",
             data: {Id: Id},
             cache: false,
             success: function (result) {
@@ -100,7 +100,7 @@
         $("#_suc_mindbody").html("Cargando...");
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>factura/Ajax_sucursal",
+            url: "<?php echo BASE_URL(); ?>factura/Ajax_sucursal",
             data: {Id: Id},
             cache: false,
             success: function (result) {
@@ -161,7 +161,7 @@
        
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>oracle/Ajax_UpInventario",
+            url: "<?php echo BASE_URL(); ?>oracle/Ajax_UpInventario",
             data: { Marca:Marca,  Origen:Origen,  Org: Org, NumInv: NumInv  },
             cache: false,
             success: function (result) {
@@ -169,7 +169,7 @@
                 
                 $("#"+Href).show();
                 $("#"+Span).html("");
-                $("#frameFile").attr("src", "<?php echo BASE_URL; ?>oracle/ForzaDescarga/"+result);
+                $("#frameFile").attr("src", "<?php echo BASE_URL(); ?>oracle/ForzaDescarga/"+result);
                 
             }
         });

@@ -152,7 +152,7 @@
         
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>dominios/Ajax_show",
+            url: "<?php echo BASE_URL(); ?>dominios/Ajax_show",
             data: {
                 Id: <?php if(isset($Info->ID)){ echo $Info->ID; }else{ echo "0";} ?>,
                 cambio: cambio
@@ -237,7 +237,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>dominios/Ajax_guardadominio",
+            url: "<?php echo BASE_URL(); ?>dominios/Ajax_guardadominio",
             data: {
                 Id: <?php echo $Id; ?>,
                 tipo: $("#tipo").val(), 

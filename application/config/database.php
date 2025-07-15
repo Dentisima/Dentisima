@@ -3,7 +3,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = '107.161.179.89';
 $db['default']['username'] = 'todatutienda_dentisima';
 $db['default']['password'] = '[IPy4AT6(hFU'; 
 $db['default']['database'] = 'todatutienda_dentisima'; 

@@ -92,7 +92,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>medico/Ajax_nuevo",
+            url: "<?php echo BASE_URL(); ?>medico/Ajax_nuevo",
             data: {Id: Id},
             cache: false,
             success: function (result) {
@@ -107,7 +107,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>medico/Ajax_busqueda",
+            url: "<?php echo BASE_URL(); ?>medico/Ajax_busqueda",
             data: {Busqueda: $("#_busqueda").val()},
             cache: false,
             success: function (result) {

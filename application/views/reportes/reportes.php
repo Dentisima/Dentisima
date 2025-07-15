@@ -23,7 +23,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>reportes/Ajax_reportes_info",
+            url: "<?php echo BASE_URL(); ?>reportes/Ajax_reportes_info",
             data: {Id: Id},
             cache: false,
             success: function (result) {
@@ -37,7 +37,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>reportes/Ajax_reportes",
+            url: "<?php echo BASE_URL(); ?>reportes/Ajax_reportes",
             data: {},
             cache: false,
             success: function (result) {

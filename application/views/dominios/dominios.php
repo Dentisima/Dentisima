@@ -81,7 +81,7 @@
         
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>dominios/Ajax_dominios_info",
+            url: "<?php echo BASE_URL(); ?>dominios/Ajax_dominios_info",
             data: {Id: Id },
             cache: false,
             success: function (result) {
@@ -101,7 +101,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>dominios/Ajax_dominios",
+            url: "<?php echo BASE_URL(); ?>dominios/Ajax_dominios",
             data: {Accion:Accion, Busqueda: $("#_busqueda").val(), Tipo: Tipo },
             cache: false,
             success: function (result) {

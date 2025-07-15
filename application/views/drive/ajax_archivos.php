@@ -153,7 +153,7 @@
     function uploadData(formdata) {
 
         $.ajax({
-            url: '<?php echo BASE_URL; ?>drive/Ajax_upload',
+            url: '<?php echo BASE_URL(); ?>drive/Ajax_upload',
             type: 'POST',
             data: formdata,
             contentType: false,
@@ -174,7 +174,7 @@
     function ArchivosLista() {
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>drive/Ajax_archivos_lista",
+            url: "<?php echo BASE_URL(); ?>drive/Ajax_archivos_lista",
             data: {Id: <?php echo $Info->ID; ?>},
             cache: false,
             success: function (result) {

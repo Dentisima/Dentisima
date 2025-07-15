@@ -14,7 +14,7 @@
                 <div class="card custom-card our-team">
                     <div class="card-body">
                         <div class="   text-center">
-                            <img alt="<?php echo $Info->NOMBRE_COMPLETO;?>" class="rounded-circle" src="<?php echo BASE_URL; ?>tema/images/<?php echo $Info->SEXO; ?>.png">
+                            <img alt="<?php echo $Info->NOMBRE_COMPLETO;?>" class="rounded-circle" src="<?php echo BASE_URL(); ?>tema/images/<?php echo $Info->SEXO; ?>.png">
                         </div>
 
                         <table class="table mg-b-0"> 

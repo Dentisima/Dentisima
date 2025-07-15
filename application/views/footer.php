@@ -276,31 +276,31 @@
 
 <!-- Back-to-top -->
 <a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/jquery/jquery.min.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/ionicons/ionicons.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/jquery/jquery.min.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/ionicons/ionicons.js"></script>
 
-		<script src="<?php echo BASE_URL; ?>tema/assets/plugins/sweet-alert/sweetalert.min.js"></script>
-		<script src="<?php echo BASE_URL; ?>tema/assets/plugins/sweet-alert/jquery.sweet-alert.js"></script>
+		<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/sweet-alert/sweetalert.min.js"></script>
+		<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/sweet-alert/jquery.sweet-alert.js"></script>
 
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/moment/min/moment.min.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/moment/min/moment.min.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
 
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/jquery-simple-datetimepicker/jquery.simple-dtpicker.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/pickerjs/picker.min.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/jquery-simple-datetimepicker/jquery.simple-dtpicker.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/pickerjs/picker.min.js"></script>
 
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/select2/js/select2.full.min.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/sidemenu/toggle-sidemenu.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/sidemenu-responsive-tabs/js/sidemenu-responsive-tabs.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/sidemenu/left-menu.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/sidebar/sidebar.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/js/sticky.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/plugins/fullcalendar/fullcalendar.min.js"></script>
-<!-- <script src="<?php echo BASE_URL; ?>tema/assets/js/calendar-events.js"></script>
-<script src="<?php echo BASE_URL; ?>tema/assets/js/calendar.js"></script> -->
-<script src="<?php echo BASE_URL; ?>tema/assets/js/custom.js"></script> 
-<script src="<?php echo BASE_URL; ?>tema/js/Utilerias.js"></script> 
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/select2/js/select2.full.min.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/sidemenu/toggle-sidemenu.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/sidemenu-responsive-tabs/js/sidemenu-responsive-tabs.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/sidemenu/left-menu.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/sidebar/sidebar.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/js/sticky.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/plugins/fullcalendar/fullcalendar.min.js"></script>
+<!-- <script src="<?php echo BASE_URL(); ?>tema/assets/js/calendar-events.js"></script>
+<script src="<?php echo BASE_URL(); ?>tema/assets/js/calendar.js"></script> -->
+<script src="<?php echo BASE_URL(); ?>tema/assets/js/custom.js"></script> 
+<script src="<?php echo BASE_URL(); ?>tema/js/Utilerias.js"></script> 
 <?php $this->load->view('javascript'); ?>
 
 </body>

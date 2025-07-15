@@ -67,7 +67,7 @@
         
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>ajustes/AjaxAccesos_Info",
+            url: "<?php echo BASE_URL(); ?>ajustes/AjaxAccesos_Info",
             data: { Id:Id },
             cache: false,
             success: function (result) {
@@ -81,7 +81,7 @@
         if( confirm("Deseas eliminar el acceso? ")){
             $.ajax({
                type: "POST",
-               url: "<?php echo BASE_URL; ?>ajustes/AjaxAccesos_Baja",
+               url: "<?php echo BASE_URL(); ?>ajustes/AjaxAccesos_Baja",
                data: { Id:Id },
                cache: false,
                success: function (result) {

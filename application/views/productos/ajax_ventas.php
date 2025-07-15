@@ -69,7 +69,7 @@
         $("#_suc_sicar").html("Cargando...");
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>productos/Ajax_sucursal",
+            url: "<?php echo BASE_URL(); ?>productos/Ajax_sucursal",
             data: {Id: Id},
             cache: false,
             success: function (result) {
@@ -92,7 +92,7 @@
             case "Cirrus":
 
                 Org = $("#_suc_cirrus").val();
-                Url = "<?php echo BASE_URL; ?>cirrus/Ajax_UpVentasExcel";
+                Url = "<?php echo BASE_URL(); ?>cirrus/Ajax_UpVentasExcel";
                 FileUp = "_suc_file_cirrus";
 
                 Href = "_ahrefupcirrus";
@@ -101,7 +101,7 @@
                 break;
             case "Sicar":
                 Org = $("#_suc_sicar").val();
-                Url = "<?php echo BASE_URL; ?>sicar/Ajax_UpVentasExcel";
+                Url = "<?php echo BASE_URL(); ?>sicar/Ajax_UpVentasExcel";
                 FileUp = "_suc_file_sicar";
                 Marca = $("#_inpbransicar").val();
 

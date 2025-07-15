@@ -6,25 +6,25 @@ $RsUser = $this->session->userdata('_userinfo');
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-        <link rel="icon" href="<?php echo BASE_URL; ?>tema/images/favicon.png" type="image/png"/>
+        <link rel="icon" href="<?php echo BASE_URL(); ?>tema/images/favicon.png" type="image/png"/>
         <title>Dentísima - Admin Panel</title>
 
         <!---Fontawesome css-->
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/typicons.font/typicons.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/feather/feather.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/css/style.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/css/skins.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/css/dark-style.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/select2/css/select2.min.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/css/sidemenu-responsive-tabs.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/css/toggle-sidemenu.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/modales.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/typicons.font/typicons.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/feather/feather.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/css/style.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/css/skins.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/css/dark-style.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/select2/css/select2.min.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/css/sidemenu-responsive-tabs.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/css/toggle-sidemenu.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/modales.css" rel="stylesheet">
         <style>
             .modal-wide-95 {
                 width: 95%;
@@ -48,7 +48,7 @@ $RsUser = $this->session->userdata('_userinfo');
 
         <!-- Loader -->
         <div id="global-loader">
-            <img src="<?php echo BASE_URL; ?>tema/images/logo.png" class="loader-img" alt="Loader">
+            <img src="<?php echo BASE_URL(); ?>tema/images/logo.png" class="loader-img" alt="Loader">
         </div>
         <!-- End Loader -->
 
@@ -59,11 +59,11 @@ $RsUser = $this->session->userdata('_userinfo');
             <div class="main-header side-header sticky">
                 <div class="container-fluid">
                     <div class="main-header-left">
-                        <a class="main-logo" href="<?php echo BASE_URL; ?>calendario">
-                            <img src="<?php echo BASE_URL; ?>tema/images/logo.png" class="header-brand-img desktop-logo" alt="logo">
-                            <img src="<?php echo BASE_URL; ?>tema/images/logo.png" class="header-brand-img icon-logo" alt="logo">
-                            <img src="<?php echo BASE_URL; ?>tema/images/logo.png" class="header-brand-img desktop-logo theme-logo" alt="logo">
-                            <img src="<?php echo BASE_URL; ?>tema/images/logo.png" class="header-brand-img icon-logo theme-logo" alt="logo">
+                        <a class="main-logo" href="<?php echo BASE_URL(); ?>calendario">
+                            <img src="<?php echo BASE_URL(); ?>tema/images/logo.png" class="header-brand-img desktop-logo" alt="logo">
+                            <img src="<?php echo BASE_URL(); ?>tema/images/logo.png" class="header-brand-img icon-logo" alt="logo">
+                            <img src="<?php echo BASE_URL(); ?>tema/images/logo.png" class="header-brand-img desktop-logo theme-logo" alt="logo">
+                            <img src="<?php echo BASE_URL(); ?>tema/images/logo.png" class="header-brand-img icon-logo theme-logo" alt="logo">
                         </a>
                         <a href="#" data-toggle="sidebar" class="nav-link nav-link toggle"><span></span></a>
                     </div>
@@ -90,19 +90,19 @@ $RsUser = $this->session->userdata('_userinfo');
                                 </div>
                                 <div class="main-notification-list">
                                     <div class="media new">
-                                        <div class="main-img-user online"><img alt="avatar" src="<?php echo BASE_URL; ?>tema/assets/img/users/5.jpg"></div>
+                                        <div class="main-img-user online"><img alt="avatar" src="<?php echo BASE_URL(); ?>tema/assets/img/users/5.jpg"></div>
                                         <div class="media-body">
                                             <p>Congratulate <strong>Olivia James</strong> for New template start</p><span>Oct 15 12:32pm</span>
                                         </div>
                                     </div>
                                     <div class="media">
-                                        <div class="main-img-user"><img alt="avatar" src="<?php echo BASE_URL; ?>tema/assets/img/users/2.jpg"></div>
+                                        <div class="main-img-user"><img alt="avatar" src="<?php echo BASE_URL(); ?>tema/assets/img/users/2.jpg"></div>
                                         <div class="media-body">
                                             <p><strong>Joshua Gray</strong> New Message Received</p><span>Oct 13 02:56am</span>
                                         </div>
                                     </div>
                                     <div class="media">
-                                        <div class="main-img-user online"><img alt="avatar" src="<?php echo BASE_URL; ?>tema/assets/img/users/3.jpg"></div>
+                                        <div class="main-img-user online"><img alt="avatar" src="<?php echo BASE_URL(); ?>tema/assets/img/users/3.jpg"></div>
                                         <div class="media-body">
                                             <p><strong>Elizabeth Lewis</strong> added new schedule realease</p><span>Oct 12 10:40pm</span>
                                         </div>
@@ -114,7 +114,7 @@ $RsUser = $this->session->userdata('_userinfo');
                             </div>
                         </div>
                         <div class="dropdown main-profile-menu">
-                            <a class="main-img-user" href=""><img alt="avatar" src="<?php echo BASE_URL; ?>tema/images/user_0.png"></a>
+                            <a class="main-img-user" href=""><img alt="avatar" src="<?php echo BASE_URL(); ?>tema/images/user_0.png"></a>
                             <div class="dropdown-menu">
                                 <div class="header-navheading">
                                     <h6 class="main-notification-title"><?php echo $this->session->userdata('_usernombre');?></h6>
@@ -123,7 +123,7 @@ $RsUser = $this->session->userdata('_userinfo');
                                 <a class="dropdown-item border-top" href="">
                                     <i class="fe fe-user"></i> Cambiar contraseña
                                 </a> 
-                                <a class="dropdown-item" href="<?php echo BASE_URL; ?>login/logout">
+                                <a class="dropdown-item" href="<?php echo BASE_URL(); ?>login/logout">
                                     <i class="fe fe-power"></i> Salir
                                 </a>
                             </div>
@@ -144,9 +144,9 @@ $RsUser = $this->session->userdata('_userinfo');
                 <div class="side-tab-body p-0 border-0" id="parentVerticalTab">
                     <nav class="first-sidemenu">
                         <ul class="resp-tabs-list  ">
-                            <li class="home-dashlead" onclick="location.href='<?php echo BASE_URL; ?>calendario'"><i class="side-menu__icon fe fe-calendar"></i><span class="side-menu__label">Calendario</span></li>
-                            <li class="apps-dashlead" onclick="location.href='<?php echo BASE_URL; ?>cliente'"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Pacientes</span></li>
-                            <li class="apps-dashlead" onclick="location.href='<?php echo BASE_URL; ?>medico'"><i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Médicos</span></li>
+                            <li class="home-dashlead" onclick="location.href='<?php echo BASE_URL(); ?>calendario'"><i class="side-menu__icon fe fe-calendar"></i><span class="side-menu__label">Calendario</span></li>
+                            <li class="apps-dashlead" onclick="location.href='<?php echo BASE_URL(); ?>cliente'"><i class="side-menu__icon fe fe-users"></i><span class="side-menu__label">Pacientes</span></li>
+                            <li class="apps-dashlead" onclick="location.href='<?php echo BASE_URL(); ?>medico'"><i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Médicos</span></li>
                             <li class="submenu-dashlead"><i class="side-menu__icon fe fe-settings"></i><span class="side-menu__label">Config</span></li>
                         </ul>
                     </nav>

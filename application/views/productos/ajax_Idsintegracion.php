@@ -82,7 +82,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "<?php echo BASE_URL; ?>oracle/UpIdIntegra",
+                url: "<?php echo BASE_URL(); ?>oracle/UpIdIntegra",
                 data: {Id: Id, Org: Org, ItemNumber: ItemNumber, Codigo: Codigo},
                 cache: false,
                 success: function (result) {

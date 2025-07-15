@@ -48,7 +48,7 @@ foreach ($Listado as $item) {
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>productos/Ajax_Integraciones",
+            url: "<?php echo BASE_URL(); ?>productos/Ajax_Integraciones",
             data: {Id: Id},
             cache: false,
             success: function (result) {

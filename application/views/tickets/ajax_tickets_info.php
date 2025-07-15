@@ -61,7 +61,7 @@
 
                         $.ajax({
                             type: "POST",
-                            url: "<?php echo BASE_URL; ?>tickets/Ajax_estatus",
+                            url: "<?php echo BASE_URL(); ?>tickets/Ajax_estatus",
                             data: {Id: <?php echo $Info->ID; ?>, Estatus: _estatusticket},
                             cache: false,
                             success: function (result) {
@@ -83,7 +83,7 @@
 
                         $.ajax({
                             type: "POST",
-                            url: "<?php echo BASE_URL; ?>tickets/Ajax_importante",
+                            url: "<?php echo BASE_URL(); ?>tickets/Ajax_importante",
                             data: {Id: <?php echo $Info->ID; ?>, Importante: _importante},
                             cache: false,
                             success: function (result) {
@@ -146,7 +146,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "<?php echo BASE_URL; ?>tickets/Ajax_comentarios",
+                url: "<?php echo BASE_URL(); ?>tickets/Ajax_comentarios",
                 data: {Id: <?php echo $Info->ID; ?>, Limit: Limit},
                 cache: false,
                 success: function (result) {
@@ -163,7 +163,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "<?php echo BASE_URL; ?>tickets/Ajax_archivos",
+                url: "<?php echo BASE_URL(); ?>tickets/Ajax_archivos",
                 data: {Id: Id},
                 cache: false,
                 success: function (result) {
@@ -198,7 +198,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: "<?php echo BASE_URL; ?>tickets/Ajax_upload_comentario",
+                url: "<?php echo BASE_URL(); ?>tickets/Ajax_upload_comentario",
                 data: formData,
                 contentType: false,
                 processData: false,

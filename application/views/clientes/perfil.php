@@ -7,7 +7,7 @@
                 <h2 class="main-content-title tx-24 mg-b-5">Pacientes</h2>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Pacientes</a></li>
-                    <li class="breadcrumb-item"><a href="<?php echo BASE_URL; ?>cliente">Listado</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo BASE_URL(); ?>cliente">Listado</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Perfil</li>
                 </ol>
             </div>
@@ -24,7 +24,7 @@
                 <div class="card custom-card our-team">
                     <div class="card-body  ">
                        <div class="main-profile-overview widget-user-image text-center">
-                            <div class="main-img-user"><img alt="avatar" src="<?php echo BASE_URL; ?>/tema/images/<?php echo $Info->SEXO;?>.png"></div>
+                            <div class="main-img-user"><img alt="avatar" src="<?php echo BASE_URL(); ?>/tema/images/<?php echo $Info->SEXO;?>.png"></div>
                         </div>
                         <div class="item-user pro-user  text-center">
                             <h4 class="pro-user-username text-dark mt-2 mb-0"><?php echo $Info->NOMBRE_COMPLETO;?></h4>

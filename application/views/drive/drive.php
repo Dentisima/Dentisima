@@ -55,7 +55,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>drive/Ajax_nuevo",
+            url: "<?php echo BASE_URL(); ?>drive/Ajax_nuevo",
             data: {Etiqueta: $("#_etiquetanombre").val()},
             cache: false,
             success: function (result) {
@@ -78,7 +78,7 @@
     
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>drive/Ajax_etiquetas",
+            url: "<?php echo BASE_URL(); ?>drive/Ajax_etiquetas",
             data: {},
             cache: false,
             success: function (result) {
@@ -91,7 +91,7 @@
        $("#_infoacciones").html("");
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>drive/Ajax_archivos",
+            url: "<?php echo BASE_URL(); ?>drive/Ajax_archivos",
             data: {Id: Id},
             cache: false,
             success: function (result) {

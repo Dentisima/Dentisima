@@ -42,7 +42,7 @@ foreach ($Lista as $item) {
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>drive/Ajax_archivos_info",
+            url: "<?php echo BASE_URL(); ?>drive/Ajax_archivos_info",
             data: {Id: Id},
             cache: false,
             success: function (result) {

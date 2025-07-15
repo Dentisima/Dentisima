@@ -54,7 +54,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>drive/Ajax_notasinternas",
+            url: "<?php echo BASE_URL(); ?>drive/Ajax_notasinternas",
             data: {Id:<?php echo $InfoArchivo->ID; ?>, Notas: $("#_notasinternas").val()},
             cache: false,
             success: function (result) {
@@ -69,7 +69,7 @@
         if (confirm("Eliminar el archivo: " + Archivo + " ?")) {
             $.ajax({
                 type: "POST",
-                url: "<?php echo BASE_URL; ?>drive/Ajax_eliminararchivo",
+                url: "<?php echo BASE_URL(); ?>drive/Ajax_eliminararchivo",
                 data: {Id:<?php echo $InfoArchivo->ID; ?>,IdEtiqueta:<?php echo $InfoArchivo->IDETIQUETA; ?>, Archivo: Archivo},
                 cache: false,
                 success: function (result) {

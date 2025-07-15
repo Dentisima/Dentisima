@@ -149,7 +149,7 @@
 
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>cliente/Ajax_referido",
+            url: "<?php echo BASE_URL(); ?>cliente/Ajax_referido",
             data: {CODIGO_REFERIDO: Codigo},
             cache: false,
             success: function (result) {
@@ -196,7 +196,7 @@ $(function(e) {
                     if (isConfirm) {
                         $.ajax({
                             type: "POST",
-                            url: "<?php echo BASE_URL; ?>cliente/Ajax_guardar",
+                            url: "<?php echo BASE_URL(); ?>cliente/Ajax_guardar",
                             data: {
                                 ID:<?php if (isset($Info->ID)) { echo $Info->ID; } else { echo "0"; } ?>,
                                 NOMBRE: $("#_NOMBRE").val(), APELLIDOS: $("#_APELLIDOS").val(), TELEFONO: "",
@@ -241,7 +241,7 @@ $(function(e) {
 
             $.ajax({
                 type: "POST",
-                url: "<?php echo BASE_URL; ?>cliente/Ajax_Edad",
+                url: "<?php echo BASE_URL(); ?>cliente/Ajax_Edad",
                 data: {Dia: dia, Mes: mes, Anio: anio},
                 cache: false,
                 success: function (result) {

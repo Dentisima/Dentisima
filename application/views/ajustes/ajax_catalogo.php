@@ -104,7 +104,7 @@
         
         $.ajax({
             type: "POST",
-            url: "<?php echo BASE_URL; ?>ajustes/AjaxCatalogoRegistro",
+            url: "<?php echo BASE_URL(); ?>ajustes/AjaxCatalogoRegistro",
             data: {Accion: Accion, Id:Id, Categoria: "<?php echo $Categoria;?>", Item: $("#itemdescripcion").val(), Activado:$("#itemactivado").val()  },
             cache: false,
             success: function (result) {

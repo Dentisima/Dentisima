@@ -7,17 +7,17 @@
         <meta name="author" content="">
         <meta name="keywords" content="">
 
-        <link rel="icon" href="<?php echo BASE_URL; ?>tema/images/favicon.png" type="image/png"/>
+        <link rel="icon" href="<?php echo BASE_URL(); ?>tema/images/favicon.png" type="image/png"/>
         <title>Dentisima | Plataforma de Administración</title>
 
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/typicons.font/typicons.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/feather/feather.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/css/style.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/css/skins.css" rel="stylesheet">
-        <link href="<?php echo BASE_URL; ?>tema/assets/css/dark-style.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/typicons.font/typicons.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/feather/feather.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/css/style.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/css/skins.css" rel="stylesheet">
+        <link href="<?php echo BASE_URL(); ?>tema/assets/css/dark-style.css" rel="stylesheet">
 
     </head>
 
@@ -25,7 +25,7 @@
 
         <!-- Loader -->
         <div id="global-loader">
-            <img src="<?php echo BASE_URL; ?>tema/assets/img/loader.svg" class="loader-img" alt="Loader">
+            <img src="<?php echo BASE_URL(); ?>tema/assets/img/loader.svg" class="loader-img" alt="Loader">
         </div>
         <!-- End Loader -->
 
@@ -36,8 +36,8 @@
             <div class="row text-center pl-0 pr-0 ml-0 mr-0">
                 <div class="col-lg-3 d-block mx-auto">
                     <div class="text-center mb-2">
-                        <img src="<?php echo BASE_URL; ?>tema/images/logo.png" class="header-brand-img" alt="logo">
-                        <img src="<?php echo BASE_URL; ?>tema/images/logo.png" class="header-brand-img theme-logos" alt="logo">
+                        <img src="<?php echo BASE_URL(); ?>tema/images/logo.png" class="header-brand-img" alt="logo">
+                        <img src="<?php echo BASE_URL(); ?>tema/images/logo.png" class="header-brand-img theme-logos" alt="logo">
                     </div>
                     <div class="card custom-card">
                         <div class="card-body">
@@ -73,7 +73,7 @@
 
                                     $.ajax({
                                         type: "POST",
-                                        url: "<?php echo BASE_URL; ?>login/AjaxAcceso",
+                                        url: "<?php echo BASE_URL(); ?>login/AjaxAcceso",
                                         data: {user: user, pwd: pwd},
                                         cache: false,
                                         success: function (result) {
@@ -94,10 +94,10 @@
             <!-- End Row -->
 
         </div>
-        <script src="<?php echo BASE_URL; ?>tema/assets/plugins/jquery/jquery.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>tema/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="<?php echo BASE_URL; ?>tema/assets/plugins/ionicons/ionicons.js"></script>
-        <script src="<?php echo BASE_URL; ?>tema/assets/js/custom.js"></script>
+        <script src="<?php echo BASE_URL(); ?>tema/assets/plugins/jquery/jquery.min.js"></script>
+        <script src="<?php echo BASE_URL(); ?>tema/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="<?php echo BASE_URL(); ?>tema/assets/plugins/ionicons/ionicons.js"></script>
+        <script src="<?php echo BASE_URL(); ?>tema/assets/js/custom.js"></script>
 
     </body>
 </html>
